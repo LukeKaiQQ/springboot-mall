@@ -1,13 +1,11 @@
 package com.example.springbootmall.model;
 
 import com.example.springbootmall.constant.ProductCategory;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.util.Date;
 
-@Setter
-@Getter
+@Data
 public class Product {
     private Integer productId;
     private String productName;
