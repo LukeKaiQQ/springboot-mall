@@ -4,7 +4,10 @@ import com.example.springbootmall.dto.UserRegisterRequest;
 import com.example.springbootmall.model.User;
 
 public interface UserDao {
-    Integer createUser(UserRegisterRequest userRegisterRequest);
 
     User getUserById(Integer userId);
+
+    Integer createUser(UserRegisterRequest userRegisterRequest);
+
+    User getUserByEmail(String email);
 }
