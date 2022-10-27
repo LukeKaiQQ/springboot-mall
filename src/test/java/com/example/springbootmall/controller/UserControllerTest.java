@@ -182,7 +182,6 @@ public class UserControllerTest {
                 .andExpect(status().is(400));
     }
 
-    @Test
     public void test_register(UserRegisterRequest userRegisterRequest) throws Exception {
         String json = objectMapper.writeValueAsString(userRegisterRequest);
 
